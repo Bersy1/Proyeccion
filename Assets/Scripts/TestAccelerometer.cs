@@ -39,7 +39,7 @@ public class TestAccelerometer : MonoBehaviour
             contador++;
             timeSinceLastShake = Time.unscaledTime;
         }
-        if(Time.unscaledTime - timeSinceLastShake >= 5)
+        if(Time.unscaledTime - timeSinceLastShake >= 10)
         {
             contador = 0;
         }
