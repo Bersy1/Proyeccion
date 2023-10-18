@@ -1713,7 +1713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _transmitter: {fileID: 797973292}
-  _address: /head
+  _address: /maniqui
   _mapBundle: {fileID: 0}
   reflectionMember:
     Target: {fileID: 1555199121}
@@ -1765,7 +1765,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1859542413}
   m_Direction: 0
   m_MinValue: 1
-  m_MaxValue: 3
+  m_MaxValue: 2
   m_WholeNumbers: 1
   m_Value: 1
   m_OnValueChanged:
