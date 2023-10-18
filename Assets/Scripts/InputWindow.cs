@@ -7,7 +7,7 @@ using extOSC;
 public class InputWindow : MonoBehaviour
 {
     public bool showed;
-    public GameObject window;
+    public GameObject window, shakeControl, maniquiControl, cartelControl, shakeManager;
     public TMP_InputField ipText;
     public OSCTransmitter transmitter;
     public OSCReceiver receiver;
@@ -16,6 +16,7 @@ public class InputWindow : MonoBehaviour
     {
         Hide();
         showed = false;
+        Control1();
     }
     public void ChangeState()
     {
@@ -42,5 +43,29 @@ public class InputWindow : MonoBehaviour
     {
         transmitter.RemoteHost = ipText.text;
         Debug.Log(ipText.text);
+    }
+
+    public void Control1()
+    {
+        shakeControl.SetActive(true);
+        shakeManager.SetActive(true);
+        maniquiControl.SetActive(false);
+        cartelControl.SetActive(false);
+    }
+
+    public void Control2()
+    {
+        shakeControl.SetActive(false);
+        shakeManager.SetActive(false);
+        maniquiControl.SetActive(true);
+        cartelControl.SetActive(false);
+    }
+
+    public void Control3()
+    {
+        shakeControl.SetActive(false);
+        shakeManager.SetActive(false);
+        maniquiControl.SetActive(false);
+        cartelControl.SetActive(true);
     }
 }

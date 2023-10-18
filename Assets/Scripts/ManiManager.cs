@@ -18,12 +18,16 @@ public class ManiManager : MonoBehaviour
             imagen.sprite = mani1;
             bateria.clip = bate1;
             bajo.clip = bajo1;
+            bajo.Play();
+            bateria.Play();
         }
         if (x == 2)
         {
             imagen.sprite = mani2;
             bateria.clip = bate2;
             bajo.clip = bajo2;
+            bajo.Play();
+            bateria.Play();
         }
     }
 }
