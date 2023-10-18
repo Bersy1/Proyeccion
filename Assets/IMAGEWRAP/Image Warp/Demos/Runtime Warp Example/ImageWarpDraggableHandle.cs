@@ -35,18 +35,18 @@ public class ImageWarpDraggableHandle : MonoBehaviour, IBeginDragHandler, IDragH
 			RectTransform m_DraggingPlane = data.pointerEnter.transform as RectTransform;
 
 			Vector3 globalMousePos = Vector3.zero;
-			if (RectTransformUtility.ScreenPointToWorldPointInRectangle (m_DraggingPlane, data.position, data.pressEventCamera, out globalMousePos))
+			if (RectTransformUtility.ScreenPointToWorldPointInRectangle(m_DraggingPlane, data.position, data.pressEventCamera, out globalMousePos))
 			{
 				transform.position = globalMousePos;
 
 				if (OnDragPositionEvent != null)
 				{
-					OnDragPositionEvent ( m_handleToAffect, globalMousePos );
+					OnDragPositionEvent(m_handleToAffect, globalMousePos);
 				}
 
 				if (m_imageWarp != null)
 				{
-					m_imageWarp.SetHandleWorldPosition (m_handleToAffect, globalMousePos);
+					m_imageWarp.SetHandleWorldPosition(m_handleToAffect, globalMousePos);
 				}
 			}
 		}
@@ -55,11 +55,11 @@ public class ImageWarpDraggableHandle : MonoBehaviour, IBeginDragHandler, IDragH
 
 	private void OnValidate()
 	{
-		m_imageWarp = GetComponentInParent<ImageWarp> ();
+		m_imageWarp = GetComponentInParent<ImageWarp>();
 
 		if (m_imageWarp != null)
 		{
-			transform.position = m_imageWarp.GetHandleWorldPosition (m_handleToAffect);
+			transform.position = m_imageWarp.GetHandleWorldPosition(m_handleToAffect);
 		}
 	}
 }
