@@ -39,16 +39,4 @@ public class FondoManager : MonoBehaviour
                 break;
         }
     }
-    public void CartelChanger(float x)
-    {
-
-    }
-    public void PinguinoChanger(float x)
-    {
-
-    }
-    public void AnarquiaChanger(float x)
-    {
-
-    }
 }
