@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/TestCelular1.unity
     guid: 1e2e4b5cbb7c60440863489bee798f38
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestAcelerometro.unity
     guid: e055989f0cb22054f837a600a07f5362
+  - enabled: 1
+    path: Assets/Scenes/FINAL.unity
+    guid: 8b244ea18b5b2f4489b2027869523052
   m_configObjects: {}

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -177,7 +177,7 @@ MonoBehaviour:
       - m_Target: {fileID: 45548614}
         m_TargetAssemblyTypeName: PinguinoManager, Assembly-CSharp
         m_MethodName: PinguinoActivator
-        m_Mode: 4
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3383,8 +3383,8 @@ MonoBehaviour:
   text1: "\xA1Injusticia!"
   text2: "\xA1Educaci\xF3n Gratis!"
   text3: "\xA1Rebeli\xF3n!"
-  text4: cuartuzzi
-  text5: sinko
+  text4: "!No + Lucro\xA1"
+  text5: "!Estamos Cansados\xA1"
 --- !u!114 &1426427962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3611,7 +3611,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1668114700}
         m_TargetAssemblyTypeName: BanderaManager, Assembly-CSharp
         m_MethodName: BanderaActivator
-        m_Mode: 4
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

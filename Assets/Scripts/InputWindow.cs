@@ -7,7 +7,7 @@ using extOSC;
 public class InputWindow : MonoBehaviour
 {
     public bool showed;
-    public GameObject window, shakeControl, maniquiControl, cartelControl, shakeManager;
+    public GameObject window, shakeControl, maniquiControl, cartelControl, shakeManager, protestaControl, banderaControl, pinguinoControl, fondoControl;
     public TMP_InputField ipText;
     public OSCTransmitter transmitter;
     public OSCReceiver receiver;
@@ -51,6 +51,10 @@ public class InputWindow : MonoBehaviour
         shakeManager.SetActive(true);
         maniquiControl.SetActive(false);
         cartelControl.SetActive(false);
+        protestaControl.SetActive(false);
+        banderaControl.SetActive(false);
+        pinguinoControl.SetActive(false);
+        fondoControl.SetActive(false);
     }
 
     public void Control2()
@@ -59,6 +63,10 @@ public class InputWindow : MonoBehaviour
         shakeManager.SetActive(false);
         maniquiControl.SetActive(true);
         cartelControl.SetActive(false);
+        protestaControl.SetActive(false);
+        banderaControl.SetActive(false);
+        pinguinoControl.SetActive(false);
+        fondoControl.SetActive(false);
     }
 
     public void Control3()
@@ -67,5 +75,57 @@ public class InputWindow : MonoBehaviour
         shakeManager.SetActive(false);
         maniquiControl.SetActive(false);
         cartelControl.SetActive(true);
+        protestaControl.SetActive(false);
+        banderaControl.SetActive(false);
+        pinguinoControl.SetActive(false);
+        fondoControl.SetActive(false);
+    }
+
+    public void Control4()
+    {
+        shakeControl.SetActive(false);
+        shakeManager.SetActive(false);
+        maniquiControl.SetActive(false);
+        cartelControl.SetActive(false);
+        protestaControl.SetActive(true);
+        banderaControl.SetActive(false);
+        pinguinoControl.SetActive(false);
+        fondoControl.SetActive(false);
+    }
+
+    public void Control5()
+    {
+        shakeControl.SetActive(false);
+        shakeManager.SetActive(false);
+        maniquiControl.SetActive(false);
+        cartelControl.SetActive(false);
+        protestaControl.SetActive(false);
+        banderaControl.SetActive(true);
+        pinguinoControl.SetActive(false);
+        fondoControl.SetActive(false);
+    }
+
+    public void Control6()
+    {
+        shakeControl.SetActive(false);
+        shakeManager.SetActive(false);
+        maniquiControl.SetActive(false);
+        cartelControl.SetActive(false);
+        protestaControl.SetActive(false);
+        banderaControl.SetActive(false);
+        pinguinoControl.SetActive(true);
+        fondoControl.SetActive(false);
+    }
+
+    public void Control7()
+    {
+        shakeControl.SetActive(false);
+        shakeManager.SetActive(false);
+        maniquiControl.SetActive(false);
+        cartelControl.SetActive(false);
+        protestaControl.SetActive(false);
+        banderaControl.SetActive(false);
+        pinguinoControl.SetActive(false);
+        fondoControl.SetActive(true);
     }
 }
