@@ -19,7 +19,7 @@ public class ProtestaWindowManager : MonoBehaviour
     {
         switch (x)
         {
-            case 0:
+            case 1:
                 protesta.color = new Color(protesta.color.r, protesta.color.g, protesta.color.b, 1f);
                 //coloroe.a = Mathf.Lerp(0, 1, 5);
                 break;
