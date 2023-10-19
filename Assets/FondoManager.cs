@@ -6,14 +6,13 @@ using UnityEngine;
 public class FondoManager : MonoBehaviour
 {
     public GameObject imageWarpOBJ;
-    ImageWarp imageWarp;
+    ImageWarp imageWarpFondo, banderaAlta, banderaBaja, pinguino1, pinguino2;
 
-    public Sprite fondo1;
-    public Sprite fondo2;
+    public Sprite fondo1, fondo2;
 
     private void Start()
     {
-        imageWarp = imageWarpOBJ.GetComponent<ImageWarp>();
+        imageWarpFondo = imageWarpOBJ.GetComponent<ImageWarp>();
     }
 
     //void FondoTest()
@@ -33,12 +32,23 @@ public class FondoManager : MonoBehaviour
         switch (x)
         {
             case 1:
-                imageWarp.sprite = fondo1;
+                imageWarpFondo.sprite = fondo1;
                 break;
             case 2:
-                imageWarp.sprite = fondo2;
+                imageWarpFondo.sprite = fondo2;
                 break;
         }
+    }
+    public void CartelChanger(float x)
+    {
+
+    }
+    public void PinguinoChanger(float x)
+    {
+
+    }
+    public void AnarquiaChanger(float x)
+    {
 
     }
 }
